@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RajuRaj art — Himalayas, shaped by hand</title>
+  <meta name="description" content="Handcrafted Himalayan miniature landscapes by Raju Raj Manav. From New Tehri, Uttarakhand. Made one at a time.">
+  <meta property="og:title" content="RajuRaj art">
+  <meta property="og:description" content="Handcrafted Himalayan miniatures from New Tehri.">
+  <meta property="og:image" content="images/village.jpeg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --snow: #f7f5f0;
+      --moss-deep: #2f4a2a;
+      --moss: #4a5d3a;
+      --moss-light: #8aa07a;
+      --earth: #5c4933;
+      --ink: #1a1a1a;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--snow); color: var(--ink); }
+    .serif { font-family: 'Cormorant Garamond', serif; }
+    .moss-bg { background-color: var(--moss-deep); }
+    .moss-text { color: var(--moss-deep); }
+    .earth-text { color: var(--earth); }
+    .snow-bg { background-color: var(--snow); }
+    .gallery-img { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+    .gallery-card:hover .gallery-img { transform: scale(1.04); }
+    .fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
+    @keyframes fadeIn { to { opacity: 1; } }
+    .hero-overlay { background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 35%, rgba(0,0,0,0.55) 100%); }
+  </style>
+</head>
+<body class="snow-bg">
+
+  <!-- ===== HERO ===== -->
+  <section class="relative h-screen min-h-[640px] overflow-hidden">
+    <img src="images/village.jpeg" alt="Himalayan village miniature with snow peaks and small houses" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 hero-overlay"></div>
+    <div class="relative h-full flex flex-col justify-between p-6 md:p-12 text-white">
+      <header class="flex items-center justify-between fade-in">
+        <h1 class="serif text-2xl md:text-3xl tracking-wider font-medium">RajuRaj <span class="italic font-normal opacity-90">art</span></h1>
+        <a href="#order" class="hidden md:inline text-sm tracking-wide border-b border-white/40 hover:border-white pb-0.5">Order</a>
+      </header>
+      <div class="max-w-2xl fade-in" style="animation-delay: 0.3s;">
+        <h2 class="serif text-5xl md:text-7xl leading-none mb-4 tracking-tight">
+          Himalayas,<br><span class="italic font-light">shaped by hand.</span>
+        </h2>
+        <p class="text-base md:text-lg opacity-90 mb-7 max-w-md">
+          Handcrafted miniature landscapes from New Tehri, Uttarakhand. Made one at a time.
+        </p>
+        <a href="#gallery" class="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-sm text-sm tracking-wide font-medium hover:bg-stone-100 transition">
+          View the collection
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PHILOSOPHY ===== -->
+  <section class="py-24 md:py-36 px-6 md:px-12">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-xs uppercase tracking-[0.3em] earth-text mb-8 opacity-70">The artist's words</p>
+      <blockquote class="serif text-3xl md:text-5xl leading-snug moss-text font-light italic">
+        "Art is my life. Look around — everything is a piece of art, designed by the unknown. I'm just trying to copy what they made."
+      </blockquote>
+      <p class="mt-8 text-sm tracking-wider earth-text uppercase">— Raju Raj Manav</p>
+      <div class="mt-12 max-w-2xl mx-auto">
+        <p class="serif text-2xl md:text-3xl text-stone-700 italic leading-relaxed">
+          "Art मेरी ज़िंदगी है। चारों ओर देखो — हर चीज़ एक कला है, किसी अनजान की बनाई हुई। मैं तो बस उसकी नक़ल उतारने की कोशिश कर रहा हूँ।"
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ARTIST ===== -->
+  <section class="py-20 md:py-28 px-6 md:px-12 bg-white border-t border-stone-200">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+      <div class="aspect-[4/5] overflow-hidden rounded-sm">
+        <img src="images/mossy-peaks.jpeg" alt="A piece in progress" class="w-full h-full object-cover">
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-[0.3em] earth-text mb-6 opacity-70">The artist</p>
+        <h2 class="serif text-4xl md:text-5xl mb-6 leading-tight">
+          Raju Raj Manav
+        </h2>
+        <p class="text-lg leading-relaxed text-stone-700 mb-4">
+          40 years. From New Tehri, Uttarakhand.
+        </p>
+        <p class="text-lg leading-relaxed text-stone-700">
+          Handcrafts Himalayan miniature landscapes — snow peaks, moss slopes, mountain villages — from memory of the hills he was born in. Each piece is shaped from moss, paint, wood, and patience.
+        </p>
+        <p class="text-lg leading-relaxed text-stone-700 mt-4">
+          One at a time. No two are the same.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="py-24 md:py-32 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 md:mb-20">
+        <p class="text-xs uppercase tracking-[0.3em] earth-text mb-4 opacity-70">The collection</p>
+        <h2 class="serif text-4xl md:text-6xl moss-text">Pieces</h2>
+        <p class="mt-4 text-sm text-stone-500 max-w-md mx-auto">Each piece is unique. Subject to availability — Raju makes one at a time.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14">
+
+        <!-- Piece: The Village -->
+        <a href="https://wa.me/919456366773?text=Hi,%20I%20want%20to%20order%20'The%20Village'%20—%20RajuRaj%20art" class="gallery-card group block">
+          <div class="aspect-square overflow-hidden rounded-sm bg-stone-100 mb-4">
+            <img src="images/village.jpeg" alt="The Village — Himalayan piece with snow peaks, houses, and lavender plants" class="gallery-img w-full h-full object-cover">
+          </div>
+          <div class="flex items-baseline justify-between">
+            <h3 class="serif text-2xl moss-text">The Village</h3>
+            <span class="text-base earth-text font-medium">₹1,500</span>
+          </div>
+          <p class="text-sm text-stone-500 mt-1">Snow peaks, mossy slopes, four homes, lavender trees.</p>
+          <p class="mt-3 text-xs uppercase tracking-wider text-stone-600 group-hover:text-black">Order on WhatsApp →</p>
+        </a>
+
+        <!-- Piece: Lavender Peaks -->
+        <a href="https://wa.me/919456366773?text=Hi,%20I%20want%20to%20order%20'Lavender%20Peaks'%20—%20RajuRaj%20art" class="gallery-card group block">
+          <div class="aspect-square overflow-hidden rounded-sm bg-stone-100 mb-4">
+            <img src="images/lavender-peaks.jpeg" alt="Lavender Peaks — three snow peaks with lavender plants on slopes" class="gallery-img w-full h-full object-cover">
+          </div>
+          <div class="flex items-baseline justify-between">
+            <h3 class="serif text-2xl moss-text">Lavender Peaks</h3>
+            <span class="text-base earth-text font-medium">₹1,400</span>
+          </div>
+          <p class="text-sm text-stone-500 mt-1">Three peaks rising over mossy slopes dotted with lavender.</p>
+          <p class="mt-3 text-xs uppercase tracking-wider text-stone-600 group-hover:text-black">Order on WhatsApp →</p>
+        </a>
+
+        <!-- Piece: Mossy Peaks -->
+        <a href="https://wa.me/919456366773?text=Hi,%20I%20want%20to%20order%20'Mossy%20Peaks'%20—%20RajuRaj%20art" class="gallery-card group block">
+          <div class="aspect-square overflow-hidden rounded-sm bg-stone-100 mb-4">
+            <img src="images/mossy-peaks.jpeg" alt="Mossy Peaks — four snow-capped peaks on a deep mossy ridge" class="gallery-img w-full h-full object-cover">
+          </div>
+          <div class="flex items-baseline justify-between">
+            <h3 class="serif text-2xl moss-text">Mossy Peaks</h3>
+            <span class="text-base earth-text font-medium">₹1,300</span>
+          </div>
+          <p class="text-sm text-stone-500 mt-1">Four peaks, deep moss base, the rain-fed slope of the Garhwal hills.</p>
+          <p class="mt-3 text-xs uppercase tracking-wider text-stone-600 group-hover:text-black">Order on WhatsApp →</p>
+        </a>
+
+        <!-- Piece: Twin Caps -->
+        <a href="https://wa.me/919456366773?text=Hi,%20I%20want%20to%20order%20'Twin%20Caps'%20—%20RajuRaj%20art" class="gallery-card group block">
+          <div class="aspect-square overflow-hidden rounded-sm bg-stone-100 mb-4">
+            <img src="images/twin-caps.jpeg" alt="Twin Caps — paired snow peaks on a forest-green base" class="gallery-img w-full h-full object-cover">
+          </div>
+          <div class="flex items-baseline justify-between">
+            <h3 class="serif text-2xl moss-text">Twin Caps</h3>
+            <span class="text-base earth-text font-medium">₹1,300</span>
+          </div>
+          <p class="text-sm text-stone-500 mt-1">Two snow caps standing close, like brothers on the ridge.</p>
+          <p class="mt-3 text-xs uppercase tracking-wider text-stone-600 group-hover:text-black">Order on WhatsApp →</p>
+        </a>
+
+        <!-- Piece: First Snow -->
+        <a href="https://wa.me/919456366773?text=Hi,%20I%20want%20to%20order%20'First%20Snow'%20—%20RajuRaj%20art" class="gallery-card group block">
+          <div class="aspect-square overflow-hidden rounded-sm bg-stone-100 mb-4">
+            <img src="images/first-snow.jpeg" alt="First Snow — a tall sharp peak with smaller companion" class="gallery-img w-full h-full object-cover">
+          </div>
+          <div class="flex items-baseline justify-between">
+            <h3 class="serif text-2xl moss-text">First Snow</h3>
+            <span class="text-base earth-text font-medium">₹1,300</span>
+          </div>
+          <p class="text-sm text-stone-500 mt-1">A tall peak with a smaller one at its side — the season's first snowfall.</p>
+          <p class="mt-3 text-xs uppercase tracking-wider text-stone-600 group-hover:text-black">Order on WhatsApp →</p>
+        </a>
+
+        <!-- Piece: Budding Peak -->
+        <a href="https://wa.me/919456366773?text=Hi,%20I%20want%20to%20order%20'Budding%20Peak'%20—%20RajuRaj%20art" class="gallery-card group block">
+          <div class="aspect-square overflow-hidden rounded-sm bg-stone-100 mb-4">
+            <img src="images/budding-peak.jpeg" alt="Budding Peak — a small, single snow-capped peak" class="gallery-img w-full h-full object-cover">
+          </div>
+          <div class="flex items-baseline justify-between">
+            <h3 class="serif text-2xl moss-text">Budding Peak</h3>
+            <span class="text-base earth-text font-medium">₹1,200</span>
+          </div>
+          <p class="text-sm text-stone-500 mt-1">Small, quiet, just beginning. The desk-companion.</p>
+          <p class="mt-3 text-xs uppercase tracking-wider text-stone-600 group-hover:text-black">Order on WhatsApp →</p>
+        </a>
+
+      </div>
+
+      <p class="text-center text-sm text-stone-500 mt-16 italic">
+        Shipping ₹150–300 across India based on location. Each piece ships hand-packed.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== HOW TO ORDER ===== -->
+  <section id="order" class="moss-bg text-white py-24 md:py-32 px-6 md:px-12">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <p class="text-xs uppercase tracking-[0.3em] text-green-200/80 mb-4">How to bring one home</p>
+        <h2 class="serif text-4xl md:text-5xl">Four simple steps</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10 md:gap-14">
+        <div class="flex gap-5">
+          <span class="serif text-5xl text-green-200/60 leading-none">01</span>
+          <div>
+            <h3 class="serif text-2xl mb-2">Message on WhatsApp</h3>
+            <p class="opacity-80 leading-relaxed">Tell us which piece you want. Or describe what you're looking for.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="serif text-5xl text-green-200/60 leading-none">02</span>
+          <div>
+            <h3 class="serif text-2xl mb-2">We confirm</h3>
+            <p class="opacity-80 leading-relaxed">If available — UPI for payment. If not, Raju makes a similar one (7–10 days).</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="serif text-5xl text-green-200/60 leading-none">03</span>
+          <div>
+            <h3 class="serif text-2xl mb-2">Packed by hand</h3>
+            <p class="opacity-80 leading-relaxed">Bubble wrap, cardboard, fragile-marked. Shipped within 2 days.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <span class="serif text-5xl text-green-200/60 leading-none">04</span>
+          <div>
+            <h3 class="serif text-2xl mb-2">Arrives in 5–8 days</h3>
+            <p class="opacity-80 leading-relaxed">Anywhere in India. International orders — message us first.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <a href="https://wa.me/919456366773?text=Hi,%20I%20saw%20RajuRaj%20art" class="inline-flex items-center gap-3 bg-white text-green-900 px-8 py-4 rounded-sm font-medium tracking-wide hover:bg-stone-100 transition">
+          Start on WhatsApp
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="py-14 px-6 text-center bg-white border-t border-stone-200">
+    <p class="serif text-2xl moss-text mb-2">RajuRaj <span class="italic font-light">art</span></p>
+    <p class="text-sm text-stone-500">Handcrafted in New Tehri, Uttarakhand.</p>
+    <p class="text-sm text-stone-500 mt-1">All pieces are unique. Each ships with a hand-signed note.</p>
+    <p class="text-xs text-stone-400 mt-6 tracking-wider">© 2026 RajuRaj art</p>
+  </footer>
+
+</body>
+</html>

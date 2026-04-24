@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Snow background -->
+  <rect width="400" height="400" fill="#f7f5f0"/>
+
+  <!-- Back peak (medium, light moss) -->
+  <polygon points="60,310 145,140 230,310" fill="#5a7250"/>
+
+  <!-- Right back peak (smaller, light moss) -->
+  <polygon points="240,310 305,180 370,310" fill="#5a7250"/>
+
+  <!-- Center peak (tallest, deep moss — front) -->
+  <polygon points="130,310 215,80 300,310" fill="#2f4a2a"/>
+
+  <!-- Snow caps -->
+  <polygon points="200,118 215,80 232,120 215,125" fill="#f7f5f0"/>
+  <polygon points="130,165 145,140 162,168 145,172" fill="#f7f5f0"/>
+  <polygon points="293,205 305,180 320,208 305,212" fill="#f7f5f0"/>
+
+  <!-- Earth base line -->
+  <rect x="40" y="308" width="320" height="5" fill="#5c4933"/>
+
+  <!-- Moss texture dots (subtle) -->
+  <circle cx="85" cy="335" r="2.5" fill="#8aa07a"/>
+  <circle cx="125" cy="343" r="2" fill="#8aa07a"/>
+  <circle cx="170" cy="338" r="2.5" fill="#8aa07a"/>
+  <circle cx="215" cy="348" r="2" fill="#8aa07a"/>
+  <circle cx="260" cy="340" r="2.5" fill="#8aa07a"/>
+  <circle cx="305" cy="345" r="2" fill="#8aa07a"/>
+  <circle cx="345" cy="335" r="2.5" fill="#8aa07a"/>
+</svg>
